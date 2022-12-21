@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/style.css" rel="stylesheet">
+    <title>Contactanos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="nav__contenedor">
+
+        <span class="nav__imagen">
+          <a href="../index.html"><img src="../images/logo.PNG" alt="Logo boca del lobo"></a>
+        </span>
+
+        <ul class="nav__ul">
+          <li class="nav__items"><a class="nav__links" href="../index.html">Home</a></li>
+          <li class="nav__items"><a class="nav__links" href=".nosotros.html">Sobre nosotros</a></li>
+          <li class="nav__items"><a class="nav__links" href="./menu.html">Nuestras hamburgesas</a></li>
+          <li class="nav__items"><a class="nav__links" href="./fotos.html">Fotos</a></li>
+          <li class="nav__items"><a class="nav__links" href="./contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section id="form">
+      <div class="form__conteiner">
+        <div class="container__caja-de-datos">
+          <div class="caja-de-datos__title">
+            <h3>Contactanos!!!!</h3>
+            <br>
+          </div>
+          <div class="caja-de-datos__nombre-container">
+            <h5 class="form__datos">Nombre</h5>
+            <input type="text" placeholder="Julian">
+          </div>
+          <br>
+          <div class="caja-de-datos__apellido-container">
+            <h5 class="form__datos">Apellido</h5>
+            <input type="text" placeholder="Gonzales">
+          </div>
+          <br>
+          <div class="caja-de-datos__asunto-container">
+            <h5 class="form__datos">Asunto</h5>
+            <div class="caja-de-datos__asunto-container__opciones">
+              <label for="asunto"><input type="radio" name="asunto" value="trabajo" >Trabajo</label>
+              <label for="asunto"><input type="radio" name="asunto" value="prensa" >Prensa</label>
+              <label for="asunto"><input type="radio" name="asunto" value="consultas" >Consultas</label>
+              <label for="asunto"><input type="radio" name="asunto" value="otro" >Otro</label>
+            </div>
+          </div>
+          <br>
+          <div class="caja-de-datos__email-container">
+            <h5 class="form__datos">Email</h5>
+            <input type="email" placeholder="juliangonzales@gmail.com.">
+          </div>
+          <br>
+           <div class="caja-de-datos__msg-container">
+            <h5 class="form__datos">Dejanos tu mensaje</h5>
+            <textarea name="mensaje" placeholder="Escribi tu mensaje aca" cols="50" rows="5"></textarea>
+           </div>
+        </div>
+        <br>
+        <div class="container__right">
+          <div class="container__img">
+            <img src="../images/png-clipart-envelope-mail-envelope-mail.png" alt="imagen del form">
+          </div>
+          <div class="container__btn">
+            <button type="submit">Enviar</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer__derechos">
+      <p>Todos los derechos reservados</p>
+    </div>
+    <div class="footer__links">
+      <a href="../index.html">| Inicio |</a>
+      <a href="./nosotros.html">Sobre Nosotros |</a>
+      <a href="./menu.html">Nuestras hamburgesas |</a>
+      <a href="./fotos.html">Fotos |</a>
+      <a href="./contacto.html">Contacto |</a>
+    </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+nav{
+    background-color: rgba(232,91,44,255);
+    margin: 0;
+    width: 100%;
+    height: 100px;
+}
+
+.nav__contenedor{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 20px 0;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav__imagen{
+display: inline-block;
+
+}
+.nav__ul{
+    display: flex;
+    font-size: 1.8em;
+}
+
+img{
+    width: 50px;
+    height: 50px;
+
+}
+.nav__items{
+    display: inline-block;
+    padding: 0 20px;
+    text-decoration: none;
+}
+
+.nav__links{
+    text-decoration: none;
+    color: white;
+    transition: 1s;
+
+}
+
+.nav__links:hover{
+    border-bottom: 2px solid black;
+    color: #000;
+}
+
+/* ACA TERMINA EL NAV */
+/* ACA EMPIEZA EL MAIN DE INDEX.HTML */
+
+#card_presentacion{
+    width: 100%;
+    height: 1000px;
+    background-image: url("../images/00.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#card__contenedor{
+    width: 100%;
+    height: 700px;
+}
+
+#card__div-title{
+    text-align: center;
+    padding-top: 100px;
+    font-size: 3em;
+}
+
+#card__div-eslogan{
+    text-align: center;
+    margin-top: 100;
+}
+
+#card__title{
+    color: white;
+    display: block;
+    font-style: italic;    
+}
+
+#card__eslogan{
+    color: white;
+    font-size: 2.5em;
+    font-style: italic;
+}
+
+#card__div-button{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.menu__button{
+    width: 175px;
+    height: 50px;
+    background-color: #222;
+    color: rgba(232,91,44,255);
+    font-size: 1.3em;
+    border-radius: 8px;
+    border: 0px;
+    font-style: oblique;
+}
+
+/* ACA TERMINA EL MAIN */
+/* ACA EMPIEZA EL FOOTER */
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: rgba(232,91,44,255);
+}
+
+.footer__derechos{
+    padding: 20px 0 30px;
+    text-align: center;
+    font-style: italic;
+}
+.footer__links{
+text-align: center;}
+
+.footer__links a{
+    text-decoration: none;
+    color: white;
+}
+
+/* ACA TERMINA EL FOOTER */
+/* ACA EMPIEZA NOSOTROS.HMTL */
+
+#nosotros{
+    width: 100%;
+    height: 900px;
+
+}
+
+/* ACA TERMINA NOSOTROS.HTML */
+/* ACA EMPIEZA MENU.HTML */
+
+#menu{
+    height: 900px;
+}
+
+/* ACA TERMINA MENU.HTML */
+/* ACA EMPIEZA FOTOS.HTML */
+
+#galeria{
+    height: 900px;
+}
+
+/* ACA TERMINA FOTOS.HTML */
+/* ACA EMPIEZA CONTACTO.HTML */
+
+#form{
+    height: 900px;
+}
+
+/* ACA TERMINA CONTACTO.HTML */
