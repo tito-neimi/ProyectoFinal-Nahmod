@@ -31,10 +31,9 @@ display: inline-block;
     font-size: 1.8em;
 }
 
-img{
-    width: 50px;
+.nav__imagen a img{
+    width: 50px; 
     height: 50px;
-
 }
 .nav__items{
     display: inline-block;
@@ -119,10 +118,14 @@ footer{
     width: 100%;
     height: 100px;
     background-color: rgba(232,91,44,255);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
 }
 
 .footer__derechos{
-    padding: 20px 0 30px;
+    padding-top: 20px;
     text-align: center;
     font-style: italic;
 }
@@ -141,6 +144,11 @@ text-align: center;}
     width: 100%;
     height: 900px;
 
+}
+
+.nosotros__img{
+    width: 300px; !important
+    height: 220px; !important
 }
 
 /* ACA TERMINA NOSOTROS.HTML */
@@ -165,3 +173,9 @@ text-align: center;}
 }
 
 /* ACA TERMINA CONTACTO.HTML */
+
+
+.img__general{
+    width: 50px;
+    height: 50px;
+}
