@@ -88,7 +88,17 @@ img{
 #card__title{
     color: white;
     display: block;
-    font-style: italic;    
+    font-style: italic;
+    animation: title_animation 6s ease  infinite;  
+}
+
+@keyframes title_animation {
+    0   {color: white;}
+    20% {color: purple;}
+    40% {color: orange;}
+    60% {color: green;}
+    80% {color: red;}
+    100% {color: blue;}
 }
 
 #card__eslogan{
