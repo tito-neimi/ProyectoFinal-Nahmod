@@ -164,12 +164,19 @@ text-align: center;}
 /* ACA TERMINA MENU.HTML */
 /* ACA EMPIEZA FOTOS.HTML */
 
+
 #galeria{
     height: 800px;
     display: grid;
     justify-content: center;
     align-content: center;
+    background-image: url("../images/zyro-image.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
+
 #galeria__title{
     text-align: center;
     margin-top: 20px;
