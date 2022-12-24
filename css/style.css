@@ -152,8 +152,8 @@ text-align: center;}
 }
 
 @media (max-with: 768px){
-    .nosotros__contenedores{
-        margin: 200px;
+    .contenedor__nosotros{
+        gap: 100px;  !important
     }
 }
 
