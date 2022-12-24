@@ -142,14 +142,21 @@ text-align: center;}
 
 #nosotros{
     width: 100%;
-    height: 900px;
-
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .nosotros__img{
     width: 300px; !important
     height: 220px; !important
 }
+
+@media (max-with: 768px){
+    .nosotros__contenedores{
+        margin: 200px;
+    }
+}
+
 
 /* ACA TERMINA NOSOTROS.HTML */
 /* ACA EMPIEZA MENU.HTML */
