@@ -5,6 +5,10 @@
     box-sizing: border-box;
 
 }
+body{
+    width: 100vw;
+    overflow-x: hidden;
+}
 
 nav{
     background-color: rgba(232,91,44,255);
@@ -20,16 +24,14 @@ nav{
     padding: 20px 0;
     box-sizing: border-box;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
 }
 
-.nav__imagen{
-display: inline-block;
 
-}
 .nav__ul{
     display: flex;
     font-size: 1.8em;
+    align-items: center;
 }
 
 img{
@@ -55,6 +57,23 @@ img{
     color: #000;
 }
 
+.navbar-toggler{
+    display: none;
+}
+
+@media (max-width: 850px){
+    .nav__items{
+        display: none;
+    }
+    .nav__contenedor{
+        justify-content: space-around; 
+    }
+    .navbar-toggler{
+        display: inline-block;
+    }
+ 
+}
+
 /* ACA TERMINA EL NAV */
 /* ACA EMPIEZA EL MAIN DE INDEX.HTML */
 
@@ -72,13 +91,11 @@ img{
 
 #card__contenedor{
     width: 100%;
-    height: 700px;
 }
 
 #card__div-title{
     text-align: center;
     padding-top: 100px;
-    font-size: 3em;
 }
 
 #card__div-eslogan{
@@ -90,11 +107,12 @@ img{
     color: white;
     display: block;
     font-style: italic;
+    font-size: 6em;
     animation: title_animation 6s ease  infinite;  
 }
 
 @keyframes title_animation {
-    0   {color: white;}
+    0%   {color: white;}
     20% {color: purple;}
     40% {color: orange;}
     60% {color: green;}
@@ -110,7 +128,7 @@ img{
 
 #card__div-button{
     text-align: center;
-    margin-top: 50px;
+    margin-top: 420px;
 }
 
 .menu__button{
@@ -128,22 +146,52 @@ img{
 /* ACA EMPIEZA EL FOOTER */
 footer{
     width: 100%;
-    height: 100px;
-    background-color: rgba(232,91,44,255);
+    background-color: rgba(232,91,44,255);!important
 }
 
 .footer__derechos{
-    padding: 20px 0 30px;
+    padding: 20px 0 0 0;
     text-align: center;
     font-style: italic;
 }
 .footer__links{
-text-align: center;}
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
 
 .footer__links a{
     text-decoration: none;
     color: white;
 }
+
+.footer__links a::after{
+    content: "|";
+    text-decoration: none;
+    color: white;
+}
+/* EN mobile */
+
+@media (max-width: 800px){
+    footer{
+        height: fit-content;
+        padding-bottom: 20px;
+    }
+    .footer__links {
+        flex-direction:column;
+        gap: 10px;
+        text-align: center;
+    }        
+    .footer__links a::after{
+        content: "";
+    }
+}
+/* 
+
+}
+
+
+*/
 
 /* ACA TERMINA EL FOOTER */
 /* ACA EMPIEZA NOSOTROS.HMTL */
@@ -170,7 +218,6 @@ text-align: center;}
 
 
 #galeria{
-    height: 800px;
     display: grid;
     justify-content: center;
     align-content: center;
@@ -193,7 +240,12 @@ text-align: center;}
 .galeria__contenedor{
     display: flex;
     flex-wrap: wrap;
-    margin: 0 25px 0 25px;
+    /* gap: 20px; */
+    /* 
+        margin-block = Margin top y bottom
+        margin-inline = margin right y left
+    */
+    margin: 0 25px 25px 25px;
     justify-content: center;
 
 }
