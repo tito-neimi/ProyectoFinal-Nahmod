@@ -144,6 +144,15 @@ nav{
     font-style: oblique;
 }
 
+@media (max-width: 800px){
+    #card__title{
+        font-size: 2.5em;
+    }
+    #card__eslogan{
+        font-size: 1.5em;
+    }
+}
+
 /* ACA TERMINA EL MAIN */
 /* ACA EMPIEZA EL FOOTER */
 footer{
