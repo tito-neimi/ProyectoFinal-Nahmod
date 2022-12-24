@@ -34,10 +34,9 @@ nav{
     align-items: center;
 }
 
-img{
-    width: 50px;
+.nav__imagen a img{
+    width: 50px; 
     height: 50px;
-
 }
 .nav__items{
     display: inline-block;
@@ -146,7 +145,15 @@ img{
 /* ACA EMPIEZA EL FOOTER */
 footer{
     width: 100%;
-    background-color: rgba(232,91,44,255);!important
+    height: 100px;
+    background-color: rgba(232,91,44,255);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+
 }
 
 .footer__derechos{
@@ -198,13 +205,24 @@ footer{
 
 #nosotros{
     width: 100%;
+
     height: 900px;
     background-image: url("../images/zyro-image.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
 
+.nosotros__img{
+    width: 300px; !important
+    height: 220px; !important
 }
+
+@media (max-with: 768px){
+    .contenedor__nosotros{
+        gap: 100px;  !important
+    }
+}
+
 
 /* ACA TERMINA NOSOTROS.HTML */
 /* ACA EMPIEZA MENU.HTML */
@@ -276,4 +294,8 @@ footer{
     height: 900px;
 }
 
-/* ACA TERMINA CONTACTO.HTML */
+
+.img__general{
+    width: 50px;
+    height: 50px;
+}
