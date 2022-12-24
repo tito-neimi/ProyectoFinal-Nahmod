@@ -216,9 +216,6 @@ footer{
     padding-top: 75px;
     padding-bottom: 75px;
 
-.nosotros__img{
-    width: 300px; !important
-    height: 220px; !important
 }
 
 @media (max-with: 768px){
