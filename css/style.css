@@ -2,7 +2,12 @@
     margin: 0;
     padding: 0;
     font-family: 'Oswald', sans-serif;
+    box-sizing: border-box;
 
+}
+body{
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 nav{
@@ -19,16 +24,14 @@ nav{
     padding: 20px 0;
     box-sizing: border-box;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
 }
 
-.nav__imagen{
-display: inline-block;
 
-}
 .nav__ul{
     display: flex;
     font-size: 1.8em;
+    align-items: center;
 }
 
 .nav__imagen a img{
@@ -53,6 +56,23 @@ display: inline-block;
     color: #000;
 }
 
+.navbar-toggler{
+    display: none;
+}
+
+@media (max-width: 850px){
+    .nav__items{
+        display: none;
+    }
+    .nav__contenedor{
+        justify-content: space-around; 
+    }
+    .navbar-toggler{
+        display: inline-block;
+    }
+ 
+}
+
 /* ACA TERMINA EL NAV */
 /* ACA EMPIEZA EL MAIN DE INDEX.HTML */
 
@@ -70,13 +90,11 @@ display: inline-block;
 
 #card__contenedor{
     width: 100%;
-    height: 700px;
 }
 
 #card__div-title{
     text-align: center;
     padding-top: 100px;
-    font-size: 3em;
 }
 
 #card__div-eslogan{
@@ -87,7 +105,18 @@ display: inline-block;
 #card__title{
     color: white;
     display: block;
-    font-style: italic;    
+    font-style: italic;
+    font-size: 6em;
+    animation: title_animation 6s ease  infinite;  
+}
+
+@keyframes title_animation {
+    0%   {color: white;}
+    20% {color: purple;}
+    40% {color: orange;}
+    60% {color: green;}
+    80% {color: red;}
+    100% {color: blue;}
 }
 
 #card__eslogan{
@@ -98,7 +127,7 @@ display: inline-block;
 
 #card__div-button{
     text-align: center;
-    margin-top: 50px;
+    margin-top: 420px;
 }
 
 .menu__button{
@@ -124,27 +153,64 @@ footer{
     align-items: center;
 }
 
+
+}
+
 .footer__derechos{
-    padding-top: 20px;
+    padding: 20px 0 0 0;
     text-align: center;
     font-style: italic;
 }
 .footer__links{
-text-align: center;}
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
 
 .footer__links a{
     text-decoration: none;
     color: white;
 }
 
+.footer__links a::after{
+    content: "|";
+    text-decoration: none;
+    color: white;
+}
+/* EN mobile */
+
+@media (max-width: 800px){
+    footer{
+        height: fit-content;
+        padding-bottom: 20px;
+    }
+    .footer__links {
+        flex-direction:column;
+        gap: 10px;
+        text-align: center;
+    }        
+    .footer__links a::after{
+        content: "";
+    }
+}
+/* 
+
+}
+
+
+*/
+
 /* ACA TERMINA EL FOOTER */
 /* ACA EMPIEZA NOSOTROS.HMTL */
 
 #nosotros{
     width: 100%;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
+
+    height: 900px;
+    background-image: url("../images/zyro-image.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
 .nosotros__img{
     width: 300px; !important
@@ -162,14 +228,63 @@ text-align: center;}
 /* ACA EMPIEZA MENU.HTML */
 
 #menu{
-    height: 900px;
+    height: auto;
 }
 
 /* ACA TERMINA MENU.HTML */
 /* ACA EMPIEZA FOTOS.HTML */
 
+
 #galeria{
-    height: 900px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    background-image: url("../images/zyro-image.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#galeria__title{
+    text-align: center;
+    margin-top: 20px;
+}
+
+#galeria__title h3{
+    font-size: 3em;
+}
+
+.galeria__contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 20px; */
+    /* 
+        margin-block = Margin top y bottom
+        margin-inline = margin right y left
+    */
+    margin: 0 25px 25px 25px;
+    justify-content: center;
+
+}
+.galeria__imagen{
+    width: 300px;
+    height: 200px;
+    margin: 15px;
+    overflow: hidden;
+    box-shadow: 1px 10px 15px rgba(0, 0, 0, 0.50)
+}
+
+.galeria__imagen img{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    transition:1s;
+    object-fit: cover;
+}
+
+.galeria__imagen img:hover{
+    transform: scale(1.5);
 }
 
 /* ACA TERMINA FOTOS.HTML */
@@ -178,8 +293,6 @@ text-align: center;}
 #form{
     height: 900px;
 }
-
-/* ACA TERMINA CONTACTO.HTML */
 
 
 .img__general{

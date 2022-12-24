@@ -13,11 +13,11 @@
 </head>
 <body>
   <header>
-    <nav>
+    <nav class="navbar">
       <div class="nav__contenedor">
 
         <span class="nav__imagen">
-          <a href="../index.html"><img src="../images/logo.PNG" alt="Logo boca del lobo"></a>
+          <a href="./index.html"><img src="../images/logo.PNG" alt="Logo boca del lobo" class="nav__logo"></a>
         </span>
 
         <ul class="nav__ul">
@@ -27,7 +27,33 @@
           <li class="nav__items"><a class="nav__links" href="./fotos.html">Fotos</a></li>
           <li class="nav__items"><a class="nav__links" href="./contacto.html">Contacto</a></li>
         </ul>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
       </div>
+      <!-- ACA EMPIEZA EL NAVBAR DE BOOSTRAP (MODIFICADO)-->
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./nosotros.html">Sobre nosotros</a>
+            <li class="nav-item">
+              <a class="nav-link" href="./menu.html">Nuestras Hamburgesas</a>
+            <li class="nav-item">
+              <a class="nav-link" href="./fotos.html">Fotos</a>
+            <li class="nav-item">
+              <a class="nav-link" href="./contacto.html">Contacto</a>
+          </form>
+        </div>
+      </div>
+    </div>
     </nav>
   </header>
   <main id="nosotros" class="container"
@@ -57,11 +83,11 @@
       <p>Todos los derechos reservados</p>
     </div>
     <div class="footer__links">
-      <a href="../index.html">| Inicio |</a>
-      <a href="./nosotros.html">Sobre Nosotros |</a>
-      <a href="./menu.html">Nuestras hamburgesas |</a>
-      <a href="./fotos.html">Fotos |</a>
-      <a href="./contacto.html">Contacto |</a>
+      <a href="../index.html">Inicio</a>
+      <a href="./nosotros.html">Sobre Nosotros</a>
+      <a href="./menu.html">Nuestras hamburgesas</a>
+      <a href="./fotos.html">Fotos</a>
+      <a href="./contacto.html">Contacto</a>
     </div>
     </div>
   </footer>
