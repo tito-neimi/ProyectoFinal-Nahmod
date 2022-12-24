@@ -27,7 +27,9 @@ nav{
     align-items: center; 
 }
 
-
+.nav__logo{
+    width: 50px;
+}
 .nav__ul{
     display: flex;
     font-size: 1.8em;
