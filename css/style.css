@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Oswald', sans-serif; 
     box-sizing: border-box;
 
 }
@@ -177,7 +177,7 @@ footer{
 }
 
 .footer__links a::after{
-    content: "|";
+    content: " |";
     text-decoration: none;
     color: white;
 }
@@ -290,7 +290,7 @@ footer{
 
 
 #galeria{
-    padding:200px 0;
+    padding:100px 0;
     display: grid;
     justify-content: center;
     align-content: center;
@@ -303,11 +303,12 @@ footer{
 
 #galeria__title{
     text-align: center;
-    margin-top: 20px;
+    margin-block: 50px;
 }
 
 #galeria__title h3{
-    font-size: 3em;
+    font-size: 5em;
+
 }
 
 .galeria__contenedor{
@@ -318,13 +319,13 @@ footer{
         margin-block = Margin top y bottom
         margin-inline = margin right y left
     */
-    margin: 0 25px 25px 25px;
+    margin: 0 25px 0 25px;
     justify-content: center;
 
 }
 .galeria__imagen{
-    width: 300px;
-    height: 200px;
+    width: 350px;
+    height: 250px;
     margin: 15px;
     overflow: hidden;
     box-shadow: 1px 10px 15px rgba(0, 0, 0, 0.50)
@@ -339,7 +340,7 @@ footer{
 }
 
 .galeria__imagen img:hover{
-    transform: scale(1.5);
+    transform: scale(1.2);
 }
 
 /* ACA TERMINA FOTOS.HTML */
@@ -347,6 +348,75 @@ footer{
 
 #form{
     height: 900px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    background-image: url("../images/zyro-image.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
+
+.form__conteiner{
+    text-align: center;
+    background-color: #666;
+    width: 800px;
+    border-radius: 20px;
+    padding-block: 20px;
+    display: flex;
+    flex-direction: column;
+}
+#form__title{
+    margin-top: 20px;
+    font-size: 3em;
+}
+
+.form__datos{
+    color: white;
+    font-size: 1.5em;
+}
+
+
+.form__inputs{
+    border: 0px;
+    width: 500px;
+    border-bottom: lightseagreen 4px solid;
+    padding: 5px;
+    margin-inline: 20px;
+}
+
+.form__asunto{
+    margin-inline: 25px;
+    color: white;
+    font-size: 1.2em;
+}
+
+.form__asunto{
+}
+
+#form__button{
+    width: 200px;
+    border: 3px lightseagreen solid;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: white;
+    transition: 1s;
+}
+
+#form__button:hover{
+    background-color: lightseagreen;
+}
+
+@media (max-width: 900px) {
+    .form__conteiner{
+        width: fit-content;
+    }
+}
+
+@media (max-width: 650px){
+    .form__inputs{
+        width: 250px;
+    }
+}
 /* ACA TERMINA CONTACTO.HTML */
