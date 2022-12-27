@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link href="../css/style.css" rel="stylesheet">
     <title>Sobre nosotros</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,11 +13,11 @@
 </head>
 <body>
   <header>
-    <nav>
+    <nav class="navbar">
       <div class="nav__contenedor">
 
         <span class="nav__imagen">
-          <a href="../index.html"><img src="../images/logo.PNG" alt="Logo boca del lobo"></a>
+          <a href="./index.html"><img src="../images/logo.PNG" alt="Logo boca del lobo" class="nav__logo"></a>
         </span>
 
         <ul class="nav__ul">
@@ -26,40 +27,71 @@
           <li class="nav__items"><a class="nav__links" href="./fotos.html">Fotos</a></li>
           <li class="nav__items"><a class="nav__links" href="./contacto.html">Contacto</a></li>
         </ul>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
       </div>
+      <!-- ACA EMPIEZA EL NAVBAR DE BOOSTRAP (MODIFICADO)-->
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./nosotros.html">Sobre nosotros</a>
+            <li class="nav-item">
+              <a class="nav-link" href="./menu.html">Nuestras Hamburgesas</a>
+            <li class="nav-item">
+              <a class="nav-link" href="./fotos.html">Fotos</a>
+            <li class="nav-item">
+              <a class="nav-link" href="./contacto.html">Contacto</a>
+          </form>
+        </div>
+      </div>
+    </div>
     </nav>
   </header>
-  <main>
-    <section id="nosotros">
-      <div id="nosotros__contenedor">
-        <div class="nosotros__contenedor">
-          <div>
-            <img src="../images/3.jpg" alt="Hamburgesas" class="nosotros__img">
+  <main id="nosotros">
+    <section class="container">
+      <div class="row h-100 ">
+        <div class=" col-12 h-50 d-flex flex-row justify-content-center align-items-center flex-wrap gap-5" >
+          <div class="col-lg-5 col-md-12 contenedor__img">
+            <img src="../images/bc9810ad6da9bf1f4505572ca8006aab.jpg" alt="Hamburgesas" class=" rounded mx-auto d-block nosotros__img" width="300px" height="300px">
           </div>
-          <p class="nosotros__p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure harum consequuntur aliquam nisi atque maiores soluta veniam fugit commodi ea, rerum perspiciatis fuga aperiam ipsa odio nihil! Quidem pariatur ad eos quia aperiam saepe esse quis iusto! Adipisci ex assumenda tempora reiciendis incidunt consectetur vel distinctio? Dolor molestiae pariatur autem, quidem a distinctio aspernatur quis sint amet magni deleniti enim fugiat dolorum modi provident in, adipisci neque illum praesentium. A temporibus neque ad quia cupiditate laboriosam assumenda consequatur porro repellat architecto minima molestiae sequi dolorem qui rem adipisci id modi praesentium commodi quis doloremque quaerat, earum voluptatem. Doloribus, minus iure.</p>
+          <div class="col-lg-5 col-md-12" >
+            <p class="nosotros__p fs-5 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore necessitatibus suscipit enim laudantium accusamus dolorem quasi quidem minima impedit nisi, at ea labore quaerat. Exercitationem necessitatibus quis officia delectus vero accusantium dicta quas? Laborum, temporibus atque nesciunt explicabo obcaecati debitis. Totam eligendi minima velit fugit asperiores fugiat quibusdam maxime eius.</p>
+          </div>
         </div>
         <br>
-        <div class="nosotros__contenedor">
-          <p class="nosotros__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo natus aliquam porro accusamus minus non, repellendus labore cupiditate architecto? Consequuntur, omnis magni. Adipisci minus dolor harum repudiandae. Omnis itaque rem autem nobis debitis tempore, animi reiciendis nisi minima fugit tenetur unde possimus nostrum voluptates quam? Inventore possimus corrupti assumenda nemo, dolore modi minima dolorum ad molestias voluptas voluptatum ex consectetur cumque obcaecati dolorem voluptates quaerat numquam repellendus enim distinctio hic illum odit illo consequatur. Illum quos saepe tempore mollitia unde est laudantium tenetur quam ex ducimus voluptas minus dolorem, aspernatur voluptatibus recusandae, id eius sed rem et culpa. Libero, enim!</p>
-          <div>
-            <img src="../images/unnamed.jpg" alt="local boca del lobo" class="nosotros__img">
+      <div class="row h-100 ">
+          <div class=" col-12 h-50 d-flex flex-row-reverse justify-content-center align-items-center flex-wrap gap-5" >
+            <div class="col-lg-5 col-md-12 contenedor__img">
+              <img src="../images/burger2.jpg" alt="Hamburgesas" class=" rounded mx-auto d-block nosotros__img" width="300px" height="300px">
+            </div>
+            <div class="col-lg-5 col-md-12" >
+              <p class="nosotros__p fs-5 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio est numquam dicta voluptatum, vel deleniti sed sit odio exercitationem dolores quisquam, enim laudantium doloremque, quam voluptatem aliquid vero facilis nostrum tempore fugiat. Ratione rem, omnis veritatis facere quia quaerat quo fugiat minus veniam quisquam eius hic quod culpa consectetur vel!</p>
+            </div>
           </div>
-        </div>
-      </div>
-    </section>
+        </section>
   </main>
   <footer>
     <div class="footer__derechos">
       <p>Todos los derechos reservados</p>
     </div>
     <div class="footer__links">
-      <a href="../index.html">| Inicio |</a>
-      <a href="./nosotros.html">Sobre Nosotros |</a>
-      <a href="./menu.html">Nuestras hamburgesas |</a>
-      <a href="./fotos.html">Fotos |</a>
-      <a href="./contacto.html">Contacto |</a>
+      <a href="../index.html">Inicio</a>
+      <a href="./nosotros.html">Sobre Nosotros</a>
+      <a href="./menu.html">Nuestras hamburgesas</a>
+      <a href="./fotos.html">Fotos</a>
+      <a href="./contacto.html">Contacto</a>
     </div>
     </div>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 </html>

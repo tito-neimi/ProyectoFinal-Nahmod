@@ -1,8 +1,13 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Oswald', sans-serif; 
+    box-sizing: border-box;
 
+}
+body{
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 nav{
@@ -19,19 +24,19 @@ nav{
     padding: 20px 0;
     box-sizing: border-box;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
 }
 
-.nav__imagen{
-display: inline-block;
-
+.nav__logo{
+    width: 50px;
 }
 .nav__ul{
     display: flex;
     font-size: 1.8em;
+    align-items: center;
 }
 
-img{
+.img__general{
     width: 50px;
     height: 50px;
 
@@ -54,6 +59,23 @@ img{
     color: #000;
 }
 
+.navbar-toggler{
+    display: none;
+}
+
+@media (max-width: 850px){
+    .nav__items{
+        display: none;
+    }
+    .nav__contenedor{
+        justify-content: space-around; 
+    }
+    .navbar-toggler{
+        display: inline-block;
+    }
+ 
+}
+
 /* ACA TERMINA EL NAV */
 /* ACA EMPIEZA EL MAIN DE INDEX.HTML */
 
@@ -71,13 +93,11 @@ img{
 
 #card__contenedor{
     width: 100%;
-    height: 700px;
 }
 
 #card__div-title{
     text-align: center;
     padding-top: 100px;
-    font-size: 3em;
 }
 
 #card__div-eslogan{
@@ -89,11 +109,12 @@ img{
     color: white;
     display: block;
     font-style: italic;
+    font-size: 6em;
     animation: title_animation 6s ease  infinite;  
 }
 
 @keyframes title_animation {
-    0   {color: white;}
+    0%   {color: white;}
     20% {color: purple;}
     40% {color: orange;}
     60% {color: green;}
@@ -109,7 +130,7 @@ img{
 
 #card__div-button{
     text-align: center;
-    margin-top: 50px;
+    margin-top: 420px;
 }
 
 .menu__button{
@@ -123,48 +144,202 @@ img{
     font-style: oblique;
 }
 
+@media (max-width: 800px){
+    #card__title{
+        font-size: 2.5em;
+    }
+    #card__eslogan{
+        font-size: 1.5em;
+    }
+}
+
 /* ACA TERMINA EL MAIN */
 /* ACA EMPIEZA EL FOOTER */
 footer{
     width: 100%;
-    height: 100px;
-    background-color: rgba(232,91,44,255);
+    background-color: rgba(232,91,44,255);!important
 }
 
 .footer__derechos{
-    padding: 20px 0 30px;
+    padding: 20px 0 0 0;
     text-align: center;
     font-style: italic;
 }
 .footer__links{
-text-align: center;}
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
 
 .footer__links a{
     text-decoration: none;
     color: white;
 }
 
+.footer__links a::after{
+    content: " |";
+    text-decoration: none;
+    color: white;
+}
+/* EN mobile */
+
+@media (max-width: 800px){
+    footer{
+        height: fit-content;
+        padding-bottom: 20px;
+    }
+    .footer__links {
+        flex-direction:column;
+        gap: 10px;
+        text-align: center;
+    }        
+    .footer__links a::after{
+        content: "";
+    }
+}
+/* 
+
+}
+
+
+*/
+
 /* ACA TERMINA EL FOOTER */
 /* ACA EMPIEZA NOSOTROS.HMTL */
 
 #nosotros{
     width: 100%;
-    height: 900px;
+    background-image: url("../images/zyro-image.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 75px;
+    padding-bottom: 75px;
 
+}
+
+.nosotros__img{
+    width: 380px; !important
 }
 
 /* ACA TERMINA NOSOTROS.HTML */
 /* ACA EMPIEZA MENU.HTML */
 
 #menu{
-    height: 900px;
+    height: auto;
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    background-image: url("../images/zyro-image.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.menu__title{
+    margin-top: 50px;
+    text-align: center; 
+}
+.menu__title h2{
+    font-size: 5em;
+}
+
+.menu__contenedor{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 50px;
+}
+.menu__contenedor-hamburgesa{
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    border: #000 solid 2px;
+    height: 400px;
+    width: 300px;
+    background-color: white;
+    text-align: center;
+    transition: 0.5s
+}
+
+.menu__contenedor-hamburgesa:hover{
+    transform: scale(1.1);
+}
+
+.menu__contenedor-hamburgesa img{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+@media (max-width: 500px) {
+    .menu__title h2{
+        font-size: 2.5em;
+    }
+
+    .menu__contenedor{
+        margin-inline: 0;
+    }
 }
 
 /* ACA TERMINA MENU.HTML */
 /* ACA EMPIEZA FOTOS.HTML */
 
+
 #galeria{
-    height: 900px;
+    padding:100px 0;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    background-image: url("../images/zyro-image.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#galeria__title{
+    text-align: center;
+    margin-block: 50px;
+}
+
+#galeria__title h3{
+    font-size: 5em;
+
+}
+
+.galeria__contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 20px; */
+    /* 
+        margin-block = Margin top y bottom
+        margin-inline = margin right y left
+    */
+    margin: 0 25px 0 25px;
+    justify-content: center;
+
+}
+.galeria__imagen{
+    width: 350px;
+    height: 250px;
+    margin: 15px;
+    overflow: hidden;
+    box-shadow: 1px 10px 15px rgba(0, 0, 0, 0.50)
+}
+
+.galeria__imagen img{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    transition:1s;
+    object-fit: cover;
+}
+
+.galeria__imagen img:hover{
+    transform: scale(1.2);
 }
 
 /* ACA TERMINA FOTOS.HTML */
@@ -172,6 +347,73 @@ text-align: center;}
 
 #form{
     height: 900px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    background-image: url("../images/zyro-image.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
+
+.form__conteiner{
+    text-align: center;
+    background-color: #666;
+    width: 800px;
+    border-radius: 20px;
+    padding-block: 20px;
+    display: flex;
+    flex-direction: column;
+}
+#form__title{
+    margin-top: 20px;
+    font-size: 3em;
+}
+
+.form__datos{
+    color: white;
+    font-size: 1.5em;
+}
+
+
+.form__inputs{
+    border: 0px;
+    width: 500px;
+    border-bottom: lightseagreen 4px solid;
+    padding: 5px;
+    margin-inline: 20px;
+}
+
+.form__asunto{
+    margin-inline: 25px;
+    color: white;
+    font-size: 1.2em;
+}
+
+
+#form__button{
+    width: 200px;
+    border: 3px lightseagreen solid;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: white;
+    transition: 1s;
+}
+
+#form__button:hover{
+    background-color: lightseagreen;
+}
+
+@media (max-width: 900px) {
+    .form__conteiner{
+        width: fit-content;
+    }
+}
+
+@media (max-width: 650px){
+    .form__inputs{
+        width: 250px;
+    }
+}
 /* ACA TERMINA CONTACTO.HTML */
