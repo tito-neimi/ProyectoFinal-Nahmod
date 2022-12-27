@@ -218,11 +218,10 @@ footer{
 
 }
 
-@media (max-with: 768px){
-    .contenedor__nosotros{
-        gap: 100px;  !important
-    }
+.nosotros__img{
+    width: 350px; !important
 }
+
 /* ACA TERMINA NOSOTROS.HTML */
 /* ACA EMPIEZA MENU.HTML */
 
@@ -392,8 +391,6 @@ footer{
     font-size: 1.2em;
 }
 
-.form__asunto{
-}
 
 #form__button{
     width: 200px;
