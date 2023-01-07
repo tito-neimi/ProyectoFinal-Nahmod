@@ -1,0 +1,45 @@
+footer{
+  width: 100%;
+  background-color: map-get($colores, principal);
+
+  @media (max-width: 800px){
+    height: fit-content;
+    padding-bottom: 20px;
+  }
+
+  .footer__derechos{
+    padding: 20px 0 0 0;
+    text-align: center;
+    font-style: italic;
+  }
+  .footer__links{
+    @include flexbox (row, center, null);
+    padding-bottom: 30px;
+    @media (max-width: 800px ) {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+    
+    a {
+      text-decoration: none;
+      color: white;
+    }
+    
+    a::after{
+      content: "|";
+      text-decoration: none;
+      color: white;
+      @media (max-width: 800px) {
+        content: "";
+      }
+    }
+    a:first-child::before{
+      content: "|";
+      @media (max-width:800px ) {
+        content: "";
+      }
+    }
+  }
+  
+}
