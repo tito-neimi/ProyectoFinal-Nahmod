@@ -19,3 +19,9 @@ $colores: (
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+@mixin center {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+}

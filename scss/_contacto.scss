@@ -1,0 +1,52 @@
+
+#form{
+  height: 900px;
+  @include center
+  @include background (url("../images/zyro-image.png"))
+
+  .form__conteiner{
+    text-align: center;
+    background-color: map-get($colores,background-formulario);
+    width: 800px;
+    border-radius: 20px;
+    padding-block: 20px;
+    @include flexbox (column,null,center)
+
+    #form__title{
+      margin-top: 20px;
+      font-size: 3em;
+    }
+
+    @media (max-width: 800px) {width: fit-content;}
+  }
+  .form__datos{
+    color: white;
+    font-size: 1.5em;
+  }
+  .form__inputs{
+    border: 0px;
+    width: 500px;
+    border-bottom: map-get($colores,formulario) 4px solid;
+    padding: 5px;
+    margin-inline: 20px;
+
+    @media (max-width:650px) {width: 250px; }
+  }
+  .form__asunto{
+    margin-inline: 25px;
+    color: white;
+    font-size: 1.2em;
+  }
+  #form__button{
+    width: 200px;
+    border: 3px map-get($colores,formulario) solid;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: white;
+    transition: 1s;
+  }
+  #form__button:hover{
+    background-color: map-get($colores,formulario);
+  }
+  
+}

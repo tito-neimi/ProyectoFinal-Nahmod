@@ -139,6 +139,56 @@ footer {
         footer .footer__links a:first-child::before {
           content: ""; } }
 
+#form {
+  height: 900px;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  background-image: url("../images/zyro-image.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  #form .form__conteiner {
+    text-align: center;
+    background-color: #666;
+    width: 800px;
+    border-radius: 20px;
+    padding-block: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    #form .form__conteiner #form__title {
+      margin-top: 20px;
+      font-size: 3em; }
+    @media (max-width: 800px) {
+      #form .form__conteiner {
+        width: fit-content; } }
+  #form .form__datos {
+    color: white;
+    font-size: 1.5em; }
+  #form .form__inputs {
+    border: 0px;
+    width: 500px;
+    border-bottom: lightseagreen 4px solid;
+    padding: 5px;
+    margin-inline: 20px; }
+    @media (max-width: 650px) {
+      #form .form__inputs {
+        width: 250px; } }
+  #form .form__asunto {
+    margin-inline: 25px;
+    color: white;
+    font-size: 1.2em; }
+  #form #form__button {
+    width: 200px;
+    border: 3px lightseagreen solid;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: white;
+    transition: 1s; }
+  #form #form__button:hover {
+    background-color: lightseagreen; }
+
 .img__general {
   width: 50px;
   height: 50px; }
