@@ -10,7 +10,7 @@
     width: 800px;
     border-radius: 20px;
     padding-block: 20px;
-    @include flexbox (column,null,center)
+    @include flexbox (column,null,center);
 
     #form__title{
       margin-top: 20px;

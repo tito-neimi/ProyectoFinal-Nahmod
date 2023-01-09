@@ -44,6 +44,43 @@ nav {
         nav .nav__contenedor .navbar-toggler {
           display: inline-block; } }
 
+footer {
+  width: 100%;
+  background-color: #e85b2c; }
+  @media (max-width: 800px) {
+    footer {
+      height: fit-content;
+      padding-bottom: 20px; } }
+  footer .footer__derechos {
+    padding: 20px 0 0 0;
+    text-align: center;
+    font-style: italic; }
+  footer .footer__links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 30px; }
+    @media (max-width: 800px) {
+      footer .footer__links {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px; } }
+    footer .footer__links a {
+      text-decoration: none;
+      color: white; }
+    footer .footer__links a::after {
+      content: "|";
+      text-decoration: none;
+      color: white; }
+      @media (max-width: 800px) {
+        footer .footer__links a::after {
+          content: ""; } }
+    footer .footer__links a:first-child::before {
+      content: "|"; }
+      @media (max-width: 800px) {
+        footer .footer__links a:first-child::before {
+          content: ""; } }
+
 #card_presentacion {
   width: 100%;
   height: 1000px;
@@ -102,42 +139,40 @@ nav {
   100% {
     color: blue; } }
 
-footer {
-  width: 100%;
-  background-color: #e85b2c; }
-  @media (max-width: 800px) {
-    footer {
-      height: fit-content;
-      padding-bottom: 20px; } }
-  footer .footer__derechos {
-    padding: 20px 0 0 0;
+#galeria {
+  padding: 100px 0;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  background-image: url("../images/zyro-image.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  #galeria #galeria__title {
     text-align: center;
-    font-style: italic; }
-  footer .footer__links {
+    margin-block: 50px; }
+    #galeria #galeria__title h3 {
+      font-size: 5em; }
+  #galeria .galeria__contenedor {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-bottom: 30px; }
-    @media (max-width: 800px) {
-      footer .footer__links {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px; } }
-    footer .footer__links a {
-      text-decoration: none;
-      color: white; }
-    footer .footer__links a::after {
-      content: "|";
-      text-decoration: none;
-      color: white; }
-      @media (max-width: 800px) {
-        footer .footer__links a::after {
-          content: ""; } }
-    footer .footer__links a:first-child::before {
-      content: "|"; }
-      @media (max-width: 800px) {
-        footer .footer__links a:first-child::before {
-          content: ""; } }
+    flex-wrap: wrap;
+    margin: 0 25px 0 25px; }
+    #galeria .galeria__contenedor .galeria__imagen {
+      width: 350px;
+      height: 250px;
+      margin: 15px;
+      overflow: hidden;
+      box-shadow: 1px 10px 15px rgba(0, 0, 0, 0.5); }
+      #galeria .galeria__contenedor .galeria__imagen img {
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        transition: 1s;
+        object-fit: cover; }
+      #galeria .galeria__contenedor .galeria__imagen img:hover {
+        transform: scale(1.2); }
 
 #form {
   height: 900px;
