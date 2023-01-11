@@ -1,7 +1,7 @@
 {
-  "name": "clase-1",
+  "name": "Boca de Lobo",
   "version": "1.0.0",
-  "description": "",
+  "description": "En boca de Lobo podes encontrar las mejores hamburgesas y a un gran precio.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/tito-neimi/PreEntrega2-Nahmod.git"
   },
-  "author": "",
+  "author": "Joaquin Nahmod",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/tito-neimi/PreEntrega2-Nahmod/issues"
