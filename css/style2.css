@@ -163,6 +163,51 @@ footer {
   #nosotros .nosotros__img {
     width: 380px; }
 
+#menu {
+  min-height: 100vh;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  background-image: url("../images/zyro-image.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  #menu .menu__title {
+    text-align: center;
+    margin-top: 50px; }
+    #menu .menu__title h2 {
+      font-size: 5em; }
+      @media (max-width: 500px) {
+        #menu .menu__title h2 {
+          font-size: 2.2em; } }
+  #menu .menu__contenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 50px; }
+    @media (max-width: 500px) {
+      #menu .menu__contenedor {
+        margin-inline: 0; } }
+    #menu .menu__contenedor .menu__contenedor-hamburgesa {
+      margin: 20px;
+      padding: 20px;
+      border-radius: 20px;
+      border: #000 solid 2px;
+      height: 400px;
+      width: 300px;
+      background-color: white;
+      text-align: center;
+      transition: 0.5s; }
+      #menu .menu__contenedor .menu__contenedor-hamburgesa img {
+        width: 200px;
+        height: 200px;
+        text-align: center;
+        margin-bottom: 20px;
+        border-radius: 20px; }
+    #menu .menu__contenedor .menu__contenedor-hamburgesa:hover {
+      transform: scale(1.1); }
+
 #galeria {
   padding: 100px 0;
   display: grid;
