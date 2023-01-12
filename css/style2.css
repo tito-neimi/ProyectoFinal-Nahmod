@@ -20,8 +20,13 @@ nav {
     @media (max-width: 900px) {
       nav .nav__contenedor {
         justify-content: space-around; } }
-    nav .nav__contenedor .nav__logo {
-      width: 50px; }
+    nav .nav__contenedor .nav__imagen {
+      width: 50px;
+      height: 50px;
+      background-color: black;
+      background-image: url(../images/logo.PNG);
+      background-size: cover;
+      display: block; }
     nav .nav__contenedor .nav__ul {
       font-size: 1.8em; }
       nav .nav__contenedor .nav__ul .nav__items {
