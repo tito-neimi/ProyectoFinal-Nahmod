@@ -1,0 +1,20 @@
+#nosotros{
+  min-height: 100vh;
+  @include background (url("../images/zyro-image.png"));
+  @include center();
+  padding-top: 75px;
+  padding-bottom: 75px;
+
+  @media (max-width: 450px) {
+    img {
+      width: 220px !important; 
+    }
+    p{
+      font-size: 1em !important;
+    }
+  }
+  .nosotros__img{
+    width: 380px ;
+  }
+}
+

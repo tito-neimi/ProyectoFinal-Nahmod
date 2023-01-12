@@ -144,6 +144,25 @@ footer {
   100% {
     color: blue; } }
 
+#nosotros {
+  min-height: 100vh;
+  background-image: url("../images/zyro-image.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  padding-top: 75px;
+  padding-bottom: 75px; }
+  @media (max-width: 450px) {
+    #nosotros img {
+      width: 220px !important; }
+    #nosotros p {
+      font-size: 1em !important; } }
+  #nosotros .nosotros__img {
+    width: 380px; }
+
 #galeria {
   padding: 100px 0;
   display: grid;
