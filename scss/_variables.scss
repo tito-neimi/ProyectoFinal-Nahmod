@@ -25,3 +25,11 @@ $colores: (
   align-content: center;
   justify-content: center;
 }
+
+$colores-anim:(
+  0%: white,
+  20%:purple,
+  40%:orange,
+  60%:green,
+  80%:red,
+  100%:blue);

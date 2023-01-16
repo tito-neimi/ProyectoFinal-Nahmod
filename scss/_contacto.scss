@@ -37,7 +37,7 @@
     color: white;
     font-size: 1.2em;
   }
-  #form__button{
+  &__button{
     width: 200px;
     border: 3px map-get($colores,formulario) solid;
     border-radius: 20px;
@@ -45,7 +45,7 @@
     background-color: white;
     transition: 1s;
   }
-  #form__button:hover{
+  &__button:hover{
     background-color: map-get($colores,formulario);
   }
   
