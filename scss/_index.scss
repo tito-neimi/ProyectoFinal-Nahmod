@@ -54,10 +54,7 @@
 }
 
 @keyframes title_animation {
-  0%   {color: white;}
-  20% {color: purple;}
-  40% {color: orange;}
-  60% {color: green;}
-  80% {color: red;}
-  100% {color: blue;}
+  @each $percent, $colors in $colores-anim{
+    #{$percent} {color: $colors;}
+  }
 }

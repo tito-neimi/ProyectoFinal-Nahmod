@@ -287,14 +287,14 @@ footer {
     margin-inline: 25px;
     color: white;
     font-size: 1.2em; }
-  #form #form__button {
+  #form__button {
     width: 200px;
     border: 3px lightseagreen solid;
     border-radius: 20px;
     padding: 10px;
     background-color: white;
     transition: 1s; }
-  #form #form__button:hover {
+  #form__button:hover {
     background-color: lightseagreen; }
 
 .img__general {
