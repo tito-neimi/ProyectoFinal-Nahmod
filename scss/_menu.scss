@@ -2,6 +2,7 @@
   min-height: 100vh;
   @include center();
   @include background (url("../images/zyro-image.png"));
+  overflow-x: hidden;
   .menu__title{
     text-align: center;
     margin-top: 50px;
@@ -18,6 +19,8 @@
     flex-wrap: wrap;
     margin: 50px;
     @media (max-width: 500px) {margin-inline: 0;}
+    @media (min-width: 1800px) {margin-inline: 200px;}
+    
     .menu__contenedor-hamburgesa{
       margin: 20px;
       padding: 20px;

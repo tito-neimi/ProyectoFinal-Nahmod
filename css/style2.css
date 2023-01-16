@@ -171,7 +171,8 @@ footer {
   background-image: url("../images/zyro-image.png");
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  overflow-x: hidden; }
   #menu .menu__title {
     text-align: center;
     margin-top: 50px; }
@@ -189,6 +190,9 @@ footer {
     @media (max-width: 500px) {
       #menu .menu__contenedor {
         margin-inline: 0; } }
+    @media (min-width: 1800px) {
+      #menu .menu__contenedor {
+        margin-inline: 200px; } }
     #menu .menu__contenedor .menu__contenedor-hamburgesa {
       margin: 20px;
       padding: 20px;
