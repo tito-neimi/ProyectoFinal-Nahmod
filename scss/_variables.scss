@@ -1,0 +1,27 @@
+$colores: (
+  principal: rgba(232,91,44,255),
+  negro: #000,
+  blanco: rgb(255, 255, 255),
+  formulario: rgb(32, 178, 170),
+  background-formulario: #666
+);
+
+@mixin flexbox ($orientacion, $justify, $align){
+  display: flex;
+  flex-direction: $orientacion;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin background ($imagen){
+  background-image: $imagen;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@mixin center {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+}
