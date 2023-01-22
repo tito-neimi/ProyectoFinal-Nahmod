@@ -1,7 +1,7 @@
 #menu{
   min-height: 100vh;
   @include center();
-  @include background (url("../images/zyro-image.png"));
+  @include background (url("../images/zyro-image.webp"));
   overflow-x: hidden;
   .menu__title{
     text-align: center;

@@ -1,8 +1,8 @@
 
 #galeria{
   padding:100px 0;
-  @include center
-  @include background (url("../images/zyro-image.png"));
+  @include center;
+  @include background (url("../images/zyro-image.webp"));
   #galeria__title{
     text-align: center;
     margin-block: 50px;
@@ -11,7 +11,7 @@
     }
   }
   .galeria__contenedor{
-    @include flexbox (row, center, null)
+    @include flexbox (row, center, null);
     flex-wrap: wrap;
     margin: 0 25px 0 25px;
     .galeria__imagen{
