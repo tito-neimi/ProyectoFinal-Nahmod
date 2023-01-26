@@ -1,20 +1,45 @@
-#nosotros{
+.nosotros{
   min-height: 100vh;
   @include background (url("../images/zyro-image.webp"));
   @include center();
   padding-top: 75px;
   padding-bottom: 75px;
 
-  @media (max-width: 450px) {
-    img {
-      width: 220px !important; 
+  &_contenedor{
+    @include flexbox (column, center, null);
+
+    .contenedor{
+      @include flexbox (row, center, center);
+      gap: 80px;
+      .contenedor_p{
+        width: 500px;
+        .nosotros__p{
+          font-size: 1.6em;
+          text-align: center;
+        }
+      }
+      .nosotros__img{
+        width: 400px;
+        border-radius: 5px;
+      }
+      @media (max-width: 1000px) {
+        flex-direction: column;
+        gap: 20px;
+        #contenedor__img2{
+          order: -1;
+        }
+      }
+      @media (max-width: 600px) {
+        .contenedor_p{
+          width: fit-content;
+          .nosotros__p{
+            font-size: 1em;
+          }
+        }
+        .nosotros__img{
+          width: 300px;
+        }
+      }
     }
-    p{
-      font-size: 1em !important;
-    }
-  }
-  .nosotros__img{
-    width: 380px ;
   }
 }
-
