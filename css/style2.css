@@ -89,7 +89,7 @@ footer {
 #card_presentacion {
   width: 100%;
   height: 1000px;
-  background-image: url("../images/00.jpg");
+  background-image: url("../images/00.webp");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -144,9 +144,9 @@ footer {
   100% {
     color: blue; } }
 
-#nosotros {
+.nosotros {
   min-height: 100vh;
-  background-image: url("../images/zyro-image.png");
+  background-image: url("../images/zyro-image.webp");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -155,20 +155,44 @@ footer {
   justify-content: center;
   padding-top: 75px;
   padding-bottom: 75px; }
-  @media (max-width: 450px) {
-    #nosotros img {
-      width: 220px !important; }
-    #nosotros p {
-      font-size: 1em !important; } }
-  #nosotros .nosotros__img {
-    width: 380px; }
+  .nosotros_contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .nosotros_contenedor .contenedor {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 80px; }
+      .nosotros_contenedor .contenedor .contenedor_p {
+        width: 500px; }
+        .nosotros_contenedor .contenedor .contenedor_p .nosotros__p {
+          font-size: 1.6em;
+          text-align: center; }
+      .nosotros_contenedor .contenedor .nosotros__img {
+        width: 400px;
+        border-radius: 5px; }
+      @media (max-width: 1000px) {
+        .nosotros_contenedor .contenedor {
+          flex-direction: column;
+          gap: 20px; }
+          .nosotros_contenedor .contenedor #contenedor__img2 {
+            order: -1; } }
+      @media (max-width: 600px) {
+        .nosotros_contenedor .contenedor .contenedor_p {
+          width: fit-content; }
+          .nosotros_contenedor .contenedor .contenedor_p .nosotros__p {
+            font-size: 1em; }
+        .nosotros_contenedor .contenedor .nosotros__img {
+          width: 300px; } }
 
 #menu {
   min-height: 100vh;
   display: grid;
   align-content: center;
   justify-content: center;
-  background-image: url("../images/zyro-image.png");
+  background-image: url("../images/zyro-image.webp");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -217,7 +241,7 @@ footer {
   display: grid;
   align-content: center;
   justify-content: center;
-  background-image: url("../images/zyro-image.png");
+  background-image: url("../images/zyro-image.webp");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -252,7 +276,7 @@ footer {
   display: grid;
   align-content: center;
   justify-content: center;
-  background-image: url("../images/zyro-image.png");
+  background-image: url("../images/zyro-image.webp");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover; }

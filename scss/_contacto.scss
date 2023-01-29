@@ -2,7 +2,7 @@
 #form{
   height: 900px;
   @include center;
-  @include background (url("../images/zyro-image.png"));
+  @include background (url("../images/zyro-image.webp"));
 
   .form__conteiner{
     text-align: center;
